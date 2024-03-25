@@ -1,14 +1,10 @@
-import "./App.css";
-import { getWeatherByName } from "../fetchers/getWeatherByName";
+import WeatherForm from "./components/WeatherForm";
 
 function App() {
-  const res = getWeatherByName().then((data) => console.log(data));
-  // console.log(res);
-
   return (
-    <div>
-      <h1 className="text-3xl">Hello</h1>
-    </div>
+    <main className="flex justify-center items-center h-screen w-screen bg-gray-950 text-white">
+      <WeatherForm />
+    </main>
   );
 }
 
