@@ -1,7 +1,6 @@
-import React from "react";
 import { WeatherResponse } from "../types/weather";
-import WindIcon from "./WindIcon";
 import HumidityIcon from "./HumidityIcon";
+import WindIcon from "./WindIcon";
 
 const WEATHER_ICON = "https://openweathermap.org/img/wn";
 export default function WeatherCard({ data }: { data: WeatherResponse }) {
